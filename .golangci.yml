@@ -1,7 +1,7 @@
 linters:
   enable:
+    - copyloopvar # Checks for copying the loop variable to a new variable on each iteration.
     - depguard # Checks for dependencies that should not be (re)introduced. See "linter-settings" for further details.
-    - exportloopref # Checks for pointers to enclosing loop variables
     - gofmt
     - goimports
     - gosec
@@ -17,6 +17,7 @@ linters:
     - dupword # Checks for duplicate words in the source code
   disable:
     - errcheck
+    - exportloopref
 
 issues:
   include:
